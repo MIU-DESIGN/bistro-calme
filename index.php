@@ -7,12 +7,12 @@
             <div class="row">
                 <div class="col-12 col-md-9">
                     <?php if(is_month()):?>
-                        <h2 class="main_title"><?php the_title('Y年m月');?></h2>
+                        <h2 class="main_title"><?php the_time('Y年m月');?></h2>
                     <?php else:?>
                         <h2 class="main_title"><?php wp_title('');?></h2>
                     <?php endif;?>
                     <div class="row">
-                        <?php if(have_posts()): ?>
+                        <?php if(have_posts()):?>
                             <?php while(have_posts()):the_post();?>
                                 <div class="col-md-4">
                                     <?php get_template_part('template-parts/loop','news');?>
@@ -28,7 +28,5 @@
             </div>
         </div>
     </main>
-
-    <div class="pagetop js-pagetop"><i class="fas fa-angle-up"></i>PAGE TOP</div>
     
 <?php get_footer();?>
