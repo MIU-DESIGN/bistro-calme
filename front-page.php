@@ -1,9 +1,9 @@
 <?php get_header();?>
     <?php if(is_home()):?>
     <div class="jumbotron">
-        <div class="jumbotron_item" style="background-image: url('<?php echo get_template_directory_uri(); ?>./assets/img/home/jumbotron-1@2x.jpg')"></div>
-        <div class="jumbotron_item" style="background-image: url('<?php echo get_template_directory_uri(); ?>./assets/img/home/jumbotron-2@2x.jpg')"></div>
-        <div class="jumbotron_item" style="background-image: url('<?php echo get_template_directory_uri(); ?>./assets/img/home/jumbotron-3@2x.jpg')"></div>
+        <div class="jumbotron_item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/home/jumbotron-1@2x.jpg')"></div>
+        <div class="jumbotron_item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/home/jumbotron-2@2x.jpg')"></div>
+        <div class="jumbotron_item" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/home/jumbotron-3@2x.jpg')"></div>
     </div>
     <?php endif;?>
 
@@ -21,7 +21,6 @@
                         </div>
                     <?php endwhile; ?>
                 <?php endif; ?>
-
             </div>
 
             <p class="sec_btn">
@@ -39,7 +38,7 @@
 
             <div class="row">
                 <div class="col-md-6">
-                    <a href="#" class="bnr" style="background-image: url('<?php echo get_template_directory_uri(); ?>./assets/img/home/bnr_about@2x.jpg')">
+                    <a href="<?php echo get_permalink(20);?>" class="bnr" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/home/bnr_about@2x.jpg')">
                         <div class="bnr_inner">
                             わたしたちについて<span>ABOUT</span>
                         </div>
@@ -47,7 +46,7 @@
                 </div>
 
                 <div class="col-md-6">
-                    <a href="#" class="bnr" style="background-image: url('<?php echo get_template_directory_uri(); ?>./assets/img/home/bnr_access@2x.jpg')">
+                    <a href="<?php echo get_permalink(30);?>" class="bnr" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/img/home/bnr_access@2x.jpg')">
                         <div class="bnr_inner">
                             アクセス<span>ACCESS</span>
                         </div>
