@@ -28,3 +28,14 @@ add_theme_support('post-thumbnails');
  */
 add_theme_support('menus');
 
+/**
+ * ページ内検索から固定ページを除外
+ */
+function SearchFilter($query) {
+if ($query->is_search) {
+ $query->set('post_type', 'post');
+ }
+ return $query;
+}
+add_filter('pre_get_posts','SearchFilter');
+

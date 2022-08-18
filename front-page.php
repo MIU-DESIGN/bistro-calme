@@ -79,7 +79,7 @@
             </div>
 
             <div class="sec_btn">
-                <a href="" class="btn btn-default">メールフォーム<i class="fas fa-angle-right"></i></a>
+                <a href="<?php echo home_url('/contact/');?>" class="btn btn-default">メールフォーム<i class="fas fa-angle-right"></i></a>
             </div>
         </div>
     </section>
