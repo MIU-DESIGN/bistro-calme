@@ -1,6 +1,7 @@
 <?php get_header();?>
 
     <h2 class="pageTitle">サイト内検索<span>SEARCH</span></h2>
+    <?php get_template_part('template-parts/breadcrumb');?>
 
     <main class="main">
         <div class="container">
@@ -20,8 +21,10 @@
                 <?php endif;?>
 
             </div>
+            <?php if(function_exists('wp_pagenavi')){
+                wp_pagenavi();
+            }?>
         </div>
-
     </main>
 
 <?php get_footer();?>
