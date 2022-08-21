@@ -39,3 +39,14 @@ if ($query->is_search) {
 }
 add_filter('pre_get_posts','SearchFilter');
 
+/**
+ * コメントフォームの表示変更
+ */
+add_filter('comment_form_default_fields', 'my_comment_form_default_fields');
+function my_comment_form_default_fields($args){
+  $args['author'] = ''; //名前を削除
+  $args['email'] = ''; //メールアドレスを削除
+  $args['url'] = ''; //サイトを削除
+  return $args;
+}
+
