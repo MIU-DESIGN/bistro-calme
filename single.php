@@ -41,6 +41,7 @@
                 </div>
 
                 <div class="col-12 col-md-3">
+                    <?php get_sidebar('latests');?>
                     <?php get_sidebar('categories');?>
                     <?php get_sidebar('archives');?>
                 </div>
